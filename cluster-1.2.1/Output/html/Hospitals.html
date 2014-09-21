@@ -1,0 +1,421 @@
+"""
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Quick Start Guide Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+	<button name = "remove markers" title = "remove markers" onclick="myFunction()">remove markers</button>
+	<div id="map" style="width:auto; height:100vh;"></div>
+
+	<script type="text/javascript">
+	function myFunction()
+	{
+	
+		console.log('Remove called')
+		removeFrom(map);
+		}
+	
+	</script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script>
+
+		var map = L.map('map').setView([12.9667,77.5667], 13);
+
+		L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			id: 'examples.map-i875mjb7'			
+		}).addTo(map);
+
+L.circle([12.985417, 77.543650], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.993270, 77.526306], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990721, 77.554469], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990721, 77.554469], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987709, 77.556613], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.992009, 77.534637], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990940, 77.553426], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985268, 77.546339], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.998046, 77.540459], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.011164, 77.546695], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.992959, 77.556293], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988845, 77.525699], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987592, 77.554298], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.995682, 77.551197], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.002253, 77.549013], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.002589, 77.538462], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.998604, 77.545642], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988845, 77.525699], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.995634, 77.553513], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.046975, 77.496892], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.992933, 77.538625], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985695, 77.543472], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991064, 77.554467], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.062420, 77.508737], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985862, 77.555231], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990721, 77.554469], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.984439, 77.554072], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.003861, 77.549840], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987333, 77.549805], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.986080, 77.537262], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.022667, 77.535167], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999488, 77.550438], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991990, 77.547246], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.996120, 77.513947], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991000, 77.553608], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.984570, 77.537394], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.993920, 77.554131], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.983138, 77.548576], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990721, 77.554469], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990721, 77.554469], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.024294, 77.542534], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.001800, 77.550104], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985879, 77.557982], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.998008, 77.546257], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.024294, 77.542534], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.984089, 77.554182], 50, { color: '#00FF00', fillcolor: '#00FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959243, 77.576954], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.963538, 77.573811], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.963008, 77.581130], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.962987, 77.581334], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.960226, 77.577893], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959321, 77.576994], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.960226, 77.577893], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.962907, 77.580390], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.961282, 77.573923], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.962897, 77.582107], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.961116, 77.572261], 50, { color: '#2EFF00', fillcolor: '#2EFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.962472, 77.649178], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.926007, 77.670431], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.958670, 77.648983], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.919192, 77.638098], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.915953, 77.635375], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959380, 77.656167], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.932375, 77.623637], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.909443, 77.623932], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.898595, 77.626587], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.881858, 77.626038], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955451, 77.711269], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.958333, 77.746000], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.905892, 77.649522], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.913833, 77.609978], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.901574, 77.630786], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.939878, 77.620771], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.926500, 77.616833], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.967333, 77.642000], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.928958, 77.683980], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.890965, 77.620624], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.963842, 77.716613], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.849333, 77.669311], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.976370, 77.727195], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.844662, 77.704171], 50, { color: '#5CFF00', fillcolor: '#5CFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.004495, 77.604588], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.028000, 77.594000], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.003928, 77.604088], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.015887, 77.639687], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.041236, 77.616562], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.996989, 77.603427], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.002896, 77.612115], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.998000, 77.621500], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.006314, 77.614710], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991307, 77.612480], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.033159, 77.608999], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.014081, 77.664262], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.022825, 77.590817], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.993809, 77.607263], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991307, 77.612480], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.029500, 77.603000], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.005256, 77.636046], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.051467, 77.595386], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.041208, 77.616578], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.013724, 77.616745], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.019342, 77.673630], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.017178, 77.643272], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.079147, 77.633470], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999022, 77.701662], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.097817, 77.590500], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.006314, 77.614710], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.002112, 77.617023], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.986023, 77.616836], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.977377, 77.638528], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.997052, 77.613469], 50, { color: '#8BFF00', fillcolor: '#8BFF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.979638, 77.542839], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.966070, 77.555027], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970751, 77.556240], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.957387, 77.550258], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956921, 77.550424], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956921, 77.550424], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956921, 77.550424], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.962976, 77.549765], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.979175, 77.554887], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975720, 77.553657], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973806, 77.549850], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970712, 77.544883], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975244, 77.548037], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.979383, 77.547905], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956921, 77.550424], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.969880, 77.557312], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.946903, 77.530692], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.976561, 77.545593], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973640, 77.547254], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.974447, 77.549312], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981527, 77.548590], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973027, 77.536685], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973333, 77.538384], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.971606, 77.537257], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.958360, 77.518951], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975493, 77.541707], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.972010, 77.535553], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.978553, 77.541900], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.966671, 77.514124], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.980995, 77.550175], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.971346, 77.513216], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981015, 77.542101], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.976325, 77.525803], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.971000, 77.524000], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970204, 77.524354], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981015, 77.542101], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.980233, 77.511600], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.976930, 77.545811], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981015, 77.542101], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.989305, 77.501387], 50, { color: '#B9FF00', fillcolor: '#B9FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.932370, 77.582417], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.916333, 77.592435], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.935617, 77.553821], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.923691, 77.573441], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.915850, 77.559128], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.893520, 77.581345], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.937058, 77.576594], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.930041, 77.569782], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.888283, 77.585092], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.882800, 77.566155], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.906550, 77.575607], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.937083, 77.548566], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.935617, 77.553821], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.932689, 77.542436], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.799540, 77.386791], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.933000, 77.571500], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.932689, 77.542436], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.911566, 77.584902], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.798000, 77.386200], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.934906, 77.573374], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.912627, 77.587573], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.924833, 77.564500], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.919667, 77.592667], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.922328, 77.583475], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.933333, 77.571500], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.935576, 77.583083], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.921349, 77.569739], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.932689, 77.542436], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.898598, 77.558593], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.922222, 77.575556], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.922187, 77.571258], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.898598, 77.558593], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.774421, 77.413233], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.894665, 77.598774], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.928694, 77.583475], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.912627, 77.587573], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.820976, 77.586574], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.932370, 77.582417], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.918520, 77.565277], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.922019, 77.571923], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.912308, 77.606540], 50, { color: '#E7FF00', fillcolor: '#E7FF00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988992, 77.577435], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999054, 77.569618], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985480, 77.574956], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987613, 77.573349], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.995609, 77.574622], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999155, 77.565736], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.022483, 77.558938], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.996172, 77.564637], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.997782, 77.568945], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.014222, 77.555949], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990500, 77.573667], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.998404, 77.569919], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999228, 77.560633], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988847, 77.576549], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.002751, 77.570281], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990854, 77.565136], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.993200, 77.571265], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.026640, 77.571844], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.039899, 77.581092], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999236, 77.572262], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.993193, 77.571089], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988992, 77.577435], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.997808, 77.583552], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.008236, 77.568930], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.002948, 77.561830], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.008237, 77.564721], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.996735, 77.568636], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987712, 77.572451], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.034236, 77.567603], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.992971, 77.576197], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.007866, 77.562424], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.994914, 77.579758], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.995620, 77.569441], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.992988, 77.578537], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.017939, 77.557091], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.999255, 77.560137], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.000009, 77.566260], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987709, 77.572448], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.992857, 77.574259], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.995609, 77.574622], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991654, 77.562596], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991950, 77.583109], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991762, 77.580085], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.004307, 77.588364], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.020736, 77.587022], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.989002, 77.565923], 50, { color: '#FFE700', fillcolor: '#FFE700', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.942267, 77.573215], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.952063, 77.570418], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955847, 77.565883], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959500, 77.567833], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959530, 77.571457], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959530, 77.571457], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.953611, 77.570987], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959530, 77.571457], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.952242, 77.569950], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955847, 77.565883], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956422, 77.574369], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.952441, 77.567541], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.961018, 77.560287], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.958035, 77.564772], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.949545, 77.572274], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955847, 77.565883], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956352, 77.574497], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.954331, 77.575576], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.954347, 77.574819], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.959530, 77.571457], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.957340, 77.564415], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.945221, 77.568457], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.942267, 77.573215], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.944351, 77.572846], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.940460, 77.582501], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.940071, 77.582442], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.940142, 77.571764], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.942267, 77.573215], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955847, 77.565883], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.952012, 77.577272], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.949578, 77.580033], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.941667, 77.584500], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.953611, 77.570987], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.940333, 77.547983], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.948580, 77.580227], 50, { color: '#FFB900', fillcolor: '#FFB900', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.972369, 77.574613], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.976045, 77.570369], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970707, 77.572789], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.977899, 77.572133], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.969010, 77.568255], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.971229, 77.571968], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975101, 77.564375], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.972848, 77.573829], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.966801, 77.570111], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.979936, 77.565351], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.974050, 77.562610], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973914, 77.561712], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973630, 77.560984], 50, { color: '#FF8B00', fillcolor: '#FF8B00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.987434, 77.594748], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981798, 77.604454], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.983223, 77.594772], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991803, 77.588796], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988340, 77.594432], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981914, 77.600361], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981331, 77.601859], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973801, 77.595382], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.974983, 77.604975], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.974983, 77.604975], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.989629, 77.598755], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.986500, 77.602000], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.988140, 77.592151], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981914, 77.600361], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990738, 77.604244], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990738, 77.604244], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985167, 77.601833], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973801, 77.595382], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.982289, 77.604873], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.991578, 77.595207], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.990738, 77.604244], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981318, 77.595132], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.001389, 77.594167], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.972358, 77.595993], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.971948, 77.595963], 50, { color: '#FF5C00', fillcolor: '#FF5C00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.964413, 77.589791], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.968183, 77.595060], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.965486, 77.589761], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.967782, 77.591870], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.967788, 77.592071], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.963900, 77.589695], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.965294, 77.592482], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.964031, 77.598278], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.966833, 77.589500], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.960141, 77.587530], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.960141, 77.587530], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.967730, 77.592339], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.960283, 77.592812], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.964662, 77.605545], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.950245, 77.596135], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955060, 77.595957], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.951495, 77.591014], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.948854, 77.598213], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.956107, 77.605477], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.969000, 77.601833], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955060, 77.595957], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.939698, 77.595511], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970853, 77.608725], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.955131, 77.613601], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.935021, 77.603086], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.935021, 77.603086], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.954620, 77.622688], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.935021, 77.603086], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.937172, 77.612826], 50, { color: '#FF2E00', fillcolor: '#FF2E00', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.977311, 77.586007], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.971810, 77.577164], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.969553, 77.580685], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.972291, 77.576874], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973946, 77.578649], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.968401, 77.578839], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.972070, 77.580628], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973277, 77.580731], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.979056, 77.578488], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.967333, 77.581833], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.973232, 77.580739], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.981108, 77.575700], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.985214, 77.580071], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975955, 77.586154], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.983837, 77.580391], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.986206, 77.580320], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970529, 77.583458], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.970797, 77.585985], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975955, 77.586154], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.986100, 77.581062], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.968650, 77.584417], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.969681, 77.576136], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.976957, 77.577635], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.975871, 77.587110], 50, { color: '#FF0000', fillcolor: '#FF0000', fillOpacity: 0.3 }).addTo(map);
+
+L.circle([12.996921, 77.544408], 1000, { color: '#CCCCCC', fillcolor: '#CCCCCC', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.961523, 77.577699], 1000, { color: '#CCCCCC', fillcolor: '#CCCCCC', fillOpacity: 0.3 }).addTo(map);
+L.circle([13.000030, 77.571116], 1000, { color: '#CCCCCC', fillcolor: '#CCCCCC', fillOpacity: 0.3 }).addTo(map);
+
+
+	</script>
+</body>
+</html>
+"""

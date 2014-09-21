@@ -1,0 +1,2 @@
+L.circle([12.909969, 77.574641], 1000, { color: '#CCCCCC', fillcolor: '#CCCCCC', fillOpacity: 0.3 }).addTo(map);
+L.circle([12.984943, 77.679598], 1000, { color: '#CCCCCC', fillcolor: '#CCCCCC', fillOpacity: 0.3 }).addTo(map);
